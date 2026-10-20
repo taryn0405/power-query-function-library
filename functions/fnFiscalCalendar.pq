@@ -50,7 +50,7 @@ let
     AddFiscalMonth = Table.AddColumn(
         AddFY,
         "Fiscal Month",
-        each Number.Mod(Date.Month([Date]) - ValidMonth, 12) + 1,
+        each Number.Mod(Date.Month([Date]) - ValidMonth + 12, 12) + 1,
         Int64.Type
     ),
 
@@ -83,3 +83,4 @@ let
     )
 in
     Result
+
