@@ -12,6 +12,8 @@
 
 ---
 
+> **Tested:** all functions except `fnSharePointFolder` were tested in Power BI Desktop (October 2026) using the mock data in this repo. `fnSharePointFolder` needs a real SharePoint site, so it is not covered by the demo file.
+
 ## What's Inside
 
 | Function | What it does |
@@ -32,6 +34,8 @@
 5. Call it from any other query.
 
 See [`samples/SampleUsage.pq`](samples/SampleUsage.pq) for a full example that chains several functions together on mock data.
+
+Prefer to see it running? Open [`samples/PowerQueryFunctionLibrary_Demo.pbix`](samples/PowerQueryFunctionLibrary_Demo.pbix) in Power BI Desktop. It includes every function plus a working sample query and a fiscal calendar, all on mock data.
 
 ## Design Notes
 
